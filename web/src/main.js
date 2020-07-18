@@ -8,6 +8,7 @@ import 'roboto-fontface/css/roboto/roboto-fontface.css';
 import '@mdi/font/css/materialdesignicons.css';
 
 import '@/styles/main.scss';
+import i18n from './i18n';
 
 Vue.use(Airtable); // install our customized Airtable plugin
 Vue.config.productionTip = false;
@@ -20,5 +21,6 @@ window.bus = new Vue();
 new Vue({
   router,
   vuetify,
+  i18n,
   render: (h) => h(App),
 }).$mount('#app');
